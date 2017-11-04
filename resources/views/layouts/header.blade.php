@@ -1,19 +1,19 @@
-<section class="hero is-primary is-medium">
+<section class="hero is-success is-fullheight">
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
-    <nav class="navbar">
+    <header class="navbar">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
             <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
           </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
             <span></span>
           </span>
         </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
+        <div id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
             <a class="navbar-item is-active">
               Home
@@ -25,7 +25,7 @@
               Documentation
             </a>
             <span class="navbar-item">
-              <a class="button is-primary is-inverted">
+              <a class="button is-success is-inverted">
                 <span class="icon">
                   <i class="fa fa-github"></i>
                 </span>
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   </div>
 
   <!-- Hero content: will be in the middle -->
@@ -52,6 +52,8 @@
 
   <!-- Hero footer: will stick at the bottom -->
   <div class="hero-foot">
-    @include ("layouts.nav")
+    <nav class="tabs is-boxed is-fullwidth">
+      @include ("layouts.nav")
+    </nav>
   </div>
 </section>

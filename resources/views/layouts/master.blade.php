@@ -9,14 +9,14 @@
     <title>My App</title>
 </head>
 <body>
-    @include ('layouts.header')
     <div id="app">
-    <section class="section">
-        <div class="container">
-            <router-view></router-view>
-        </div>
-    </section>
-</div>
-<script type="text/javascript" src="/js/app.js"></script>
+        @include ('layouts.header')
+        <section class="section">
+            <div class="container">
+                <router-view></router-view>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>

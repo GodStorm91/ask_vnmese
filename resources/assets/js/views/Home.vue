@@ -2,11 +2,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Home</div>
+                <div class="message"　v-for="status in statuses">
+                    <div class="message-header">
+                        <p>
+                            {{status.user.name}} said
+                        </p>
+                        <p>
+                            A moment ago
+                        </p>
+                    </div>
 
-                    <div class="panel-body">
-                        I'm an example component!
+                    <div class="message-body" v-text="status.body">
                     </div>
                 </div>
             </div>
@@ -16,8 +22,15 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data(){
+            return {
+                statuses: []
+            }
+        },
+        created() {
+            //fire off an ajax 
+            axios.get("statuses")
+            .then(({data}) => this.statuses = data);
         }
     }
 </script>
