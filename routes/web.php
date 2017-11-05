@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/statuses', function(){
-	return 
+	return "";
 })
