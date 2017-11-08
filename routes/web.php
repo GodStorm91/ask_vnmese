@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/statuses', function(){
-	return "";
+Route::get('/editor', function(){
+	return view('editor');
 });
