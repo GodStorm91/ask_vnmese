@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import axios from 'axios';
 import VueRouter from 'vue-router';
+import trumbowyg from 'vue-trumbowyg';
+import 'trumbowyg/dist/ui/trumbowyg.css';
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -12,6 +14,8 @@ window.axios = axios;
 window.Vue = Vue;
 
 Vue.use(VueRouter);
+Vue.use(trumbowyg);
+
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

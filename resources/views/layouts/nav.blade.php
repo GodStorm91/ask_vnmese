@@ -7,6 +7,9 @@
           <router-link tag="li" to="/about">
             <a>About</a>
           </router-link>
+          <router-link tag="li" to="/editor">
+            <a>Editor</a>
+          </router-link>
         </ul>
       </div>
     </nav>
