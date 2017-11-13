@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::get('/editor', function(){
 	return view('editor');
 });
+
+
+// Social Auth
+Route::get('auth/social', 'Auth\SocialAuthController@show')->name('social.login');
+Route::get('oauth/{driver}', 'Auth\SocialAuthController@redirectToProvider')->name('social.oauth');
+Route::get('oauth/{driver}/callback', 'Auth\SocialAuthController@handleProviderCallback')->name('social.callback');
