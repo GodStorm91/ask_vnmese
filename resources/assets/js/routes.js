@@ -10,10 +10,6 @@ let routes = [
 		path : "/about",
 		component: require('./views/About')
 	},
-	{
-		path : "/editor",
-		component: require('./views/Editor')
-	}
 
 ];
 

@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import axios from 'axios';
+// import {$,jQuery} from 'jquery';
 import VueRouter from 'vue-router';
 import trumbowyg from 'vue-trumbowyg';
 import 'trumbowyg/dist/ui/trumbowyg.css';
@@ -12,7 +13,11 @@ import 'trumbowyg/dist/ui/trumbowyg.css';
 
 window.axios = axios;
 window.Vue = Vue;
+// export for others scripts to use
+// window.$ = $;
+// window.jQuery = jQuery;
 
+// Vue.use(jQuery);
 Vue.use(VueRouter);
 Vue.use(trumbowyg);
 
