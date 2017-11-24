@@ -13,7 +13,7 @@ class SocialAuthController extends Controller
 
 	public function __construct()
 	{
-		$this->middleware('guest');
+		// $this->middleware('guest');
 	}
 
     /**
@@ -83,7 +83,7 @@ class SocialAuthController extends Controller
      */
     protected function sendSuccessResponse()
     {
-    	return redirect()->intended('home');
+    	return redirect()->intended('/');
     }
 
     /**

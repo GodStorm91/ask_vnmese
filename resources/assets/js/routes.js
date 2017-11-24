@@ -10,7 +10,10 @@ let routes = [
 		path : "/about",
 		component: require('./views/About')
 	},
-
+	{
+		path : "/Login",
+		component: require('./views/Login')
+	},
 ];
 
 export default new VueRouter({

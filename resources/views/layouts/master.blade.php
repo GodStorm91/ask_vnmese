@@ -10,6 +10,7 @@
     <title>My App</title>
 </head>
 <body>
+    <script type="text/javascript" src="/js/app.js"></script>
     <div id="app">
         @include ('layouts.header')
         <section class="section">
@@ -18,6 +19,5 @@
             </div>
         </section>
     </div>
-    <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>
